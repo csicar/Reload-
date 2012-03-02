@@ -1,0 +1,15 @@
+{
+  "name": "Reload+",
+  "description" : "livereloading for lazier Webdeveloper, who dislike pressing ctrl + s , alt + tab , f5 each time they whant to see the changes",
+  "version": "0.1",
+  "option_page": "options.html",
+  "permissions": [
+   	 "http://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "file://*/*" ],
+      "js": ["reload.js"]
+    }
+  ]
+}
